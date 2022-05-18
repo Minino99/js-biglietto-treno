@@ -20,8 +20,9 @@ posso inserire un minimo / massimo di km possibili?
 
 let km = prompt("Inserisci il numero di chilometri che vuoi percorrere");
 
-if (km > 1200 || km < 10) {
+if (km > 1200 || km < 10|| isNaN(km) || km < 0) {
  alert("Attenzione! Il numero di chilometri deve essere compreso tra 10 e 1200");
+ return false;
 }
 
 let age = prompt("Inserisci la tua età");
