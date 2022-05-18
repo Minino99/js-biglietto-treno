@@ -22,7 +22,6 @@ let km = prompt("Inserisci il numero di chilometri che vuoi percorrere");
 
 if (km > 1200 || km < 10|| isNaN(km) || km < 0) {
  alert("Attenzione! Il numero di chilometri deve essere compreso tra 10 e 1200");
- return false;
 }
 
 let age = prompt("Inserisci la tua età");
@@ -46,6 +45,10 @@ if (age > 65) {
 
 if (age >= 18 && age <= 65) {
   totalprice = price.toFixed(2);
+}
+
+if (age < 0 || age > 120 || isNaN(age) || km > 1200 || km < 10|| isNaN(km) || km < 0){
+ totalprice = "Ricarica la pagina e inserisci un valore valido";
 }
 
 const displaykm = document.getElementById("kminput");
